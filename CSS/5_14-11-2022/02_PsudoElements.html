@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* psudo elements -> before, after, selection, focus, mark, first-line, first-letter*/
+      h1::before {
+        content: "--- ";
+      }
+      h1::after {
+        content: " ---";
+      }
+      div {
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        padding: 10px;
+        margin: 20px auto;
+      }
+      .div1 p::first-letter {
+        font-size: 30px;
+      }
+      .div2 p::first-line {
+        color: blue;
+      }
+      .div1 p::marker {
+        background-color: green;
+      }
+      .div1 p::selection {
+        color: white;
+        background-color: black;
+      }
+      input:focus {
+        border: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello world</h1>
+    <div class="div1">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam cumque
+        corrupti magnam odit modi porro? Dolore culpa doloremque fugit soluta,
+        commodi enim modi, repellendus in excepturi similique ex. Deserunt,
+        optio?
+      </p>
+    </div>
+    <div class="div2">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam cumque
+        corrupti magnam odit modi porro? Dolore culpa doloremque fugit soluta,
+        commodi enim modi, repellendus in excepturi similique ex. Deserunt,
+        optio?
+      </p>
+    </div>
+
+    <input type="text" name="" id="" />
+  </body>
+</html>
