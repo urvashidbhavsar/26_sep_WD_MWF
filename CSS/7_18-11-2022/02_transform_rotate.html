@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* transform: ;-> to perform task as given values */
+      /* transform-origin: ;
+            transform-style: ;
+            transform-box: ; */
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: darksalmon;
+        /* horizontal vertical blur color */
+        box-shadow: 2px 2px 5px black;
+        margin: auto;
+      }
+      .div1 {
+        transition: 0.5s all ease;
+      }
+      .div1:hover {
+        /* rotate set value in degree 0 to 360 */
+        /* when given 1 value in rotate it perform x and y axis */
+        transform: rotate(180deg);
+      }
+      .div2 {
+        transition: 0.5s all ease;
+      }
+      .div2:hover {
+        transform: rotateX(180deg);
+      }
+      .div3 {
+        transition: 1s all ease;
+      }
+      .div3:hover {
+        transform: rotateY(180deg);
+      }
+      .div4 {
+        transition: 0.5s all ease;
+      }
+      .div4:hover {
+        transform: rotateZ(180deg);
+      }
+      .div5 {
+        transition: 1s all ease;
+      }
+      .div5:hover {
+        transform: rotateX(72deg) rotateY(312deg) rotateZ(235deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">div1</div>
+    <br />
+    <div class="div2">div2</div>
+    <br />
+    <div class="div3">div3</div>
+    <br />
+    <div class="div4">div4</div>
+    <br />
+    <div class="div5">div5</div>
+  </body>
+</html>

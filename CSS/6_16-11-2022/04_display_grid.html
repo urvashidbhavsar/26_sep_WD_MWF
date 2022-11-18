@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        background-color: aqua;
+        display: grid;
+        /* grid-template-columns: auto auto auto auto; */
+        /* grid-template-columns: 1fr 2fr 3fr 1fr; */
+        grid-template-columns: repeat(4, 1fr);
+        /*column-gap: 40px; */
+        /* row-gap: 30px; */
+        gap: 50px;
+        padding: 20px;
+        /* align-items: center; used with flex property */
+        justify-items: center;
+      }
+      .sub {
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+        background-color: darkslateblue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- display : grid -> set content in a tablular form
+          grid-template-columns
+          grid-template-rows
+          gap > row-gap and col-gap
+    -->
+    <div class="main">
+      <div class="sub">
+        <h4>Div1</h4>
+      </div>
+      <div class="sub">
+        <h4>Div2</h4>
+      </div>
+      <div class="sub">
+        <h4>Div3</h4>
+      </div>
+      <div class="sub">
+        <h4>Div4</h4>
+      </div>
+      <div class="sub">
+        <h4>Div5</h4>
+      </div>
+      <div class="sub">
+        <h4>Div6</h4>
+      </div>
+      <div class="sub">
+        <h4>Div7</h4>
+      </div>
+      <div class="sub">
+        <h4>Div8</h4>
+      </div>
+    </div>
+  </body>
+</html>

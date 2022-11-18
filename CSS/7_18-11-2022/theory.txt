@@ -1,0 +1,5 @@
+new properties are available in css3
+
+Transition - to easy and smooth move element
+Transform - rotate, move
+Animation - continue work on page.

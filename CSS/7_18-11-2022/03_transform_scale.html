@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* scale -> content zoom in and out 
+        default value of scale is 1
+        zoom in - value -> 1 to 1.3
+        zoom out - value -> 0 to 1
+        */
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: lightseagreen;
+        margin: auto;
+      }
+      .div1 {
+        transition: 1s all ease;
+      }
+      .div1:hover {
+        /* if we set 1 value in scale() it consider on X and Y axis */
+        transform: scale(1.2);
+      }
+      .div2 {
+        transition: 1s all ease;
+      }
+      .div2:hover {
+        transform: scaleX(1.5);
+      }
+      .div3 {
+        transition: 1s all ease;
+      }
+      .div3:hover {
+        transform: scaleY(0.5);
+      }
+      .div4 {
+        transition: 1s all ease;
+      }
+      .div4:hover {
+        transform: scaleX(0.5) scaleY(0.8) scaleZ(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">div1</div>
+    <br />
+    <div class="div2">div2</div>
+    <br />
+    <div class="div3">div3</div>
+    <br />
+    <div class="div4">div4</div>
+  </body>
+</html>

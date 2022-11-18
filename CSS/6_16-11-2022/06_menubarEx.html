@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      .header-part {
+      }
+      .header-nav {
+        background-image: url(../HouseImages/banner3.jpg);
+        height: 700px;
+        width: 100%;
+        background-position: center;
+      }
+      .header-nav .navi {
+        display: flex;
+        padding: 50px;
+      }
+      .header-nav .navi .logo {
+        padding: 20px;
+        width: 20%;
+      }
+      .header-nav .navi .logo a {
+        font-size: 40px;
+        font-family: sans-serif;
+      }
+      .header-nav .navi .logo a span {
+        color: red;
+      }
+      .header-nav .navi .links-nav {
+        padding: 20px;
+        width: 60%;
+      }
+      .header-nav .navi .links-nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .header-nav .navi .links-nav ul li {
+        padding: 20px;
+      }
+      .header-nav .navi .links-nav a {
+        color: red;
+        font-weight: bold;
+      }
+      .header-nav .navi .search span {
+        color: white;
+        padding: 20px;
+      }
+      .header-nav .navi .search {
+        width: 20%;
+        padding: 20px;
+        display: flex;
+        justify-content: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- create header portion -->
+    <header class="header-part">
+      <div class="header-nav">
+        <div class="navi">
+          <div class="logo">
+            <a href="">Real<span>Houzing</span></a>
+          </div>
+          <div class="links-nav">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Pages</a></li>
+              <li><a href="">Contect</a></li>
+            </ul>
+          </div>
+          <div class="search">
+            <span class="fa-solid fa-magnifying-glass"></span>
+            <span class="fa-solid fa-moon"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

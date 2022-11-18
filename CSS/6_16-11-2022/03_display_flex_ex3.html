@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- flex -> set div in width in numbers 1 to ....  -->
+    <!-- flex-direction -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        height: 100px;
+        width: 100px;
+        border: 1px solid blue;
+        color: white;
+      }
+      .main {
+        background-color: aqua;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        /* gap -> row-gap and col-gap */
+      }
+      .sub1,
+      .sub3,
+      .sub5 {
+        background-color: darkviolet;
+        /* flex: 1; */
+      }
+      .sub2,
+      .sub4 {
+        background-color: darkgreen;
+        /* flex: 2; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- display : flex 
+
+        justify-content
+        align-items
+        gap
+        flex-direction
+        flex - flex-grow, flex-shrink, flex-basis
+    -->
+
+    <div class="main">
+      <div class="sub1"><h1>div1</h1></div>
+      <div class="sub2"><h1>div2</h1></div>
+      <div class="sub3"><h1>div3</h1></div>
+      <div class="sub4"><h1>div4</h1></div>
+      <div class="sub5"><h1>div5</h1></div>
+    </div>
+  </body>
+</html>

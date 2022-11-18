@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* if we set value in negative it work oposite side */
+      .main {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 40px;
+      }
+      div {
+        height: 200px;
+        width: 100px;
+        background-color: lightpink;
+        gap: 30px;
+        box-shadow: 0px 2px 5px black;
+      }
+      .div1 {
+        transition: 1s all ease;
+      }
+      .div1:hover {
+        transform: translateX(20px);
+      }
+      .div2 {
+        transition: 1s all ease;
+      }
+      .div2:hover {
+        transform: translateY(-20px);
+      }
+      .div3 {
+        transition: 1s all ease;
+      }
+      .div3:hover {
+        /* work both axis */
+        transform: translate(50px, -40px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="div1"></div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+    </div>
+  </body>
+</html>
