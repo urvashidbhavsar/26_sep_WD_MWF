@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div1 {
+        height: 100px;
+        width: 100px;
+        background-color: lightpink;
+        box-shadow: 2px 2px 5px magenta;
+        animation-name: example1;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        /* animation-fill-mode: forwards; */
+        animation: example1 1s ease 2s infinite alternate;
+      }
+      @keyframes example1 {
+        from {
+          margin-left: 0;
+        }
+        to {
+          margin-left: 200px;
+          border-radius: 10px;
+          background-color: black;
+          color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">Hello</div>
+  </body>
+</html>
