@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <style>
+      nav {
+        background-color: lightcoral;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        display: inline-block;
+        padding: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .show-list {
+        position: relative;
+      }
+      .disp-list {
+        display: none;
+        position: absolute;
+        top: 40px;
+        background-color: lightpink;
+        box-shadow: 2px 2px 5px black;
+        left: 22px;
+        padding: 9px;
+        width: 82px;
+      }
+      .show-list:hover .disp-list {
+        display: block;
+      }
+      .animate {
+        transition: 1s all ease;
+      }
+      .show-list:hover .animate {
+        transform: rotate(180deg);
+        /* flip rotateX(180deg) */
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li class="show-list">
+          <a href="" class="lists"
+            >Services
+            <span class="fa-solid fa-angle-down animate"></span>
+          </a>
+          <div class="disp-list">
+            <a href="">Service 1</a>
+            <hr color="gray" />
+            <a href="">Service 2</a>
+            <hr color="gray" />
+            <a href="">Service 3</a>
+          </div>
+        </li>
+        <li><a href="">Help</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
