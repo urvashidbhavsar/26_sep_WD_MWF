@@ -1,0 +1,25 @@
+@media (max-width: 576px) {
+  p {
+    background-color: aqua;
+  }
+}
+@media (min-width: 576px) {
+  p {
+    background-color: aquamarine;
+  }
+}
+@media (min-width: 768px) {
+  p {
+    background-color: blanchedalmond;
+  }
+}
+@media (min-width: 992px) {
+  p {
+    background-color: blueviolet;
+  }
+}
+@media (min-width: 1200px) {
+  p {
+    background-color: lightblue;
+  }
+}

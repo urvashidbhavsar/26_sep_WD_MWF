@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <style>
+      nav {
+        background-color: lightcoral;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        display: inline-block;
+        padding: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .show-list {
+        position: relative;
+      }
+      .disp-list {
+        display: none;
+        position: absolute;
+        top: 40px;
+        background-color: lightpink;
+        box-shadow: 2px 2px 5px black;
+        left: 22px;
+        padding: 9px;
+        width: 120px;
+      }
+      .show-list:hover .disp-list {
+        display: block;
+      }
+      .animate {
+        transition: 1s all ease;
+      }
+      .show-list:hover .animate {
+        transform: rotate(180deg);
+        /* flip rotateX(180deg) */
+      }
+      .list1,
+      .list2,
+      .list3 {
+        padding: 10px;
+      }
+      .list3 {
+        position: relative;
+      }
+      .disp-list-1 li {
+        padding: 10px;
+      }
+      .disp-list-1 {
+        display: none;
+        position: absolute;
+        top: 12px;
+        width: 125px;
+        background: #d57cac;
+        left: 90px;
+      }
+      .list3:hover .disp-list-1 {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li class="show-list">
+          <a href="" class="lists"
+            >Services
+            <span class="fa-solid fa-angle-down animate"></span>
+            <ul class="disp-list">
+              <li class="list1"><a href="">Service 1</a></li>
+              <li class="list2"><a href="">Service 2</a></li>
+              <li class="list3">
+                <a href="">Service 3</a>
+                <span class="fa-solid fa-angle-right"></span>
+                <ul class="disp-list-1">
+                  <li><a href="">Sub Service 1</a></li>
+                  <li><a href="">Sub Service 1</a></li>
+                </ul>
+              </li>
+            </ul>
+          </a>
+        </li>
+        <li><a href="">Help</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
+
+<!-- 
+
+   <div class="disp-list">
+            <a href="">Service 1</a>
+            <hr color="gray" />
+            <a href="">Service 2</a>
+            <hr color="gray" />
+            <a href="">Service 3</a>
+          </div>
+ -->
