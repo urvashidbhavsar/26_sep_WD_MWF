@@ -1,0 +1,19 @@
+@media (max-width: 576px) {
+  .container {
+    margin: 0;
+  }
+  .top-header .top-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-header .top-content .left-content {
+    display: flex;
+  }
+  .top-header .top-content .left-content ul li {
+    display: inline-block;
+    padding: 20px;
+  }
+  .top-header .top-content .right-content {
+    justify-content: flex-start;
+  }
+}
