@@ -1,0 +1,25 @@
+@media (min-width: 992px) {
+  .container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  /* ---------- navigations ---------------- */
+  .top-nav .navigations {
+    display: flex;
+    padding: 10px;
+  }
+  .top-nav .navigations .left-logo {
+    flex: 2;
+  }
+  .top-nav .middle-nav {
+    display: block;
+  }
+  .top-nav .nav-button {
+    display: none;
+  }
+  /* -----------------home-footer ------------------ */
+  .home-footer .home-services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
