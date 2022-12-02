@@ -1,0 +1,54 @@
+@media (min-width: 576px) {
+  .container {
+    margin: 0;
+  }
+  .top-header .top-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-header .top-content .left-content {
+    display: flex;
+  }
+  .top-header .top-content .left-content ul li {
+    display: inline-block;
+    padding: 20px;
+  }
+  .top-header .top-content .right-content {
+    justify-content: flex-start;
+  }
+  /* ---------- navigations ---------------- */
+  .top-nav .navigations {
+    display: flex;
+    padding: 10px;
+  }
+  .top-nav .middle-nav {
+    display: none;
+  }
+  .top-nav .nav-button {
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    font-weight: 800;
+    border-radius: 5px;
+  }
+  .top-nav .nav-btn {
+    padding: 10px;
+  }
+  /* -----------------home-footer ------------------ */
+  .home-footer .home-services {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+  }
+  /* ===========service section =============== */
+  #service .inner-service {
+    display: flex;
+    flex-direction: column;
+  }
+  /* =============service info ================== */
+  #service-info .ser-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

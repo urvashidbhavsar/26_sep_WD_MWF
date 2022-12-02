@@ -1,0 +1,7 @@
+@media (min-width: 1200px) {
+  /* ===========service section =============== */
+  #service .inner-service {
+    display: flex;
+    flex-direction: row;
+  }
+}
