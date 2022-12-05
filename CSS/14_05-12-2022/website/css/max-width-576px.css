@@ -1,0 +1,110 @@
+@media (max-width: 576px) {
+  /* ------ top header ---------- */
+  .container {
+    margin: 0;
+  }
+  .top-header {
+    width: 100%;
+  }
+  .top-header .top-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-header .top-content .left-content {
+    display: flex;
+  }
+  .top-header .top-content .left-content ul li {
+    display: inline-block;
+    padding: 20px;
+  }
+  .top-header .top-content .right-content {
+    justify-content: flex-start;
+  }
+  /* ---------- navigations ---------------- */
+  .top-nav {
+    width: 100%;
+  }
+  .top-nav .navigations {
+    display: flex;
+    padding: 10px;
+  }
+  .top-nav .navigations .left-logo {
+    flex: 2;
+  }
+  .top-nav .middle-nav {
+    display: none;
+  }
+  .top-nav .nav-button {
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    font-weight: 800;
+    border-radius: 5px;
+  }
+  .top-nav .nav-btn {
+    padding: 10px;
+  }
+  /* ================= Home Page =================== */
+  .homepage .home-bg {
+    height: 550px;
+    width: 100%;
+  }
+  .home-bg .form-order {
+    display: flex;
+  }
+  .home-bg .column2-form {
+    flex: 2;
+    padding: 50px;
+  }
+  .home-bg .column1-blank {
+    display: none;
+    flex: 3;
+  }
+  /* -----------------home-footer ------------------ */
+  .home-footer .home-services {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+  }
+
+  /* ===========service section =============== */
+  #service .inner-service {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* =============service info ================== */
+  #service-info .ser-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* ============== sender - supplier =============== */
+  #supply .supply-info .supp-ser-info {
+    display: flex;
+    flex-direction: column;
+  }
+  #supply .supply-info .supp-ser-info .left-ser-info {
+    flex: 1;
+    border-bottom: 1px solid white;
+    border-right: 0;
+    padding: 10px 0px;
+  }
+  #supply .supply-info .supp-ser-info .right-ser-info {
+    flex: 1;
+    padding: 10px 0px;
+  }
+
+  /* ============ work section ================ */
+  #work_section .heading {
+    padding: 20px;
+  }
+  #work_section .heading .top-heading p {
+    padding: 0;
+  }
+  #work_section .heading .head-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
