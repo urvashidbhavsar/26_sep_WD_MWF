@@ -1,0 +1,106 @@
+@media (min-width: 576px) {
+  .container {
+    margin: 0;
+  }
+  .top-header .top-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-header .top-content .left-content {
+    display: flex;
+  }
+  .top-header .top-content .left-content ul li {
+    display: inline-block;
+    padding: 20px;
+  }
+  .top-header .top-content .right-content {
+    justify-content: flex-start;
+  }
+  /* ---------- navigations ---------------- */
+  .top-nav .navigations {
+    display: flex;
+    padding: 10px;
+  }
+  .top-nav .middle-nav {
+    display: none;
+  }
+  .top-nav .nav-button {
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    font-weight: 800;
+    border-radius: 5px;
+  }
+  .top-nav .nav-btn {
+    padding: 10px;
+  }
+  /* -----------------home-footer ------------------ */
+  .home-footer .home-services {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+  }
+  /* ===========service section =============== */
+  #service .inner-service {
+    display: flex;
+    flex-direction: column;
+  }
+  /* =============service info ================== */
+  #service-info .ser-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* ============== sender - supplier =============== */
+  #supply .supply-info .supp-ser-info {
+    display: flex;
+    flex-direction: column;
+  }
+  #supply .supply-info .supp-ser-info .left-ser-info {
+    flex: 1;
+    border-bottom: 1px solid white;
+    border-right: 0;
+    padding: 10px 0px;
+  }
+  #supply .supply-info .supp-ser-info .right-ser-info {
+    flex: 1;
+    padding: 10px 0px;
+  }
+
+  /* ============ work section ================ */
+  #work_section .heading {
+    padding: 20px;
+  }
+  #work_section .heading .top-heading p {
+    padding: 0;
+  }
+  #work_section .heading .head-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* =============== client section ================== */
+  .client-back-img {
+    height: 800px;
+    padding: 0px;
+    z-index: -1;
+  }
+  .client-back-img .client-comm-sec {
+    display: flex;
+    flex-direction: column;
+  }
+  .client-comm-sec .client-comm-left .comment .para::after {
+    left: 80px;
+    top: 324px;
+  }
+  .client-comm-sec .client-comm-right .comment .para::after {
+    top: 610px;
+    left: 80px;
+  }
+
+  /* =================== news blog section ==================== */
+  .latest_news .news-blog-sec {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
