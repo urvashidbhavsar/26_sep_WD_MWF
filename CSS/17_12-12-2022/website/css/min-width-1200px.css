@@ -1,0 +1,64 @@
+@media (min-width: 1200px) {
+  /* ===========service section =============== */
+  #service .inner-service {
+    display: flex;
+    flex-direction: row;
+  }
+  #supply .supply-info .supp-ser-info {
+    display: flex;
+    flex-direction: row;
+  }
+  #supply .supply-info .supp-ser-info .left-ser-info {
+    flex: 1;
+    border-right: 1px solid white;
+    border-bottom: 0;
+    padding: 0px 50px;
+  }
+  #supply .supply-info .supp-ser-info .right-ser-info {
+    flex: 1;
+    padding: 0px 50px;
+  }
+  /* ============ work section ================ */
+  #work_section .heading {
+    padding: 50px;
+  }
+  #work_section .heading .top-heading p {
+    padding: 0px 200px;
+  }
+  #work_section .heading .head-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* =============== client section ================== */
+  .client-back-img {
+    height: 500px;
+  }
+  .client-back-img .client-comm-sec {
+    display: flex;
+    flex-direction: row;
+  }
+  .client-comm-sec .client-comm-left .comment .para::after {
+    left: 80px;
+    top: 276px;
+  }
+  .client-comm-sec .client-comm-right .comment .para::after {
+    top: 276px;
+    left: 714px;
+  }
+  /* =================== news blog section ==================== */
+  .latest_news .news-blog-sec {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* =============== Footer ================= */
+  .footer-sec .footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    gap: 50px;
+  }
+  .footer-sec .footer-content button {
+    top: 0;
+    right: 60px;
+  }
+}

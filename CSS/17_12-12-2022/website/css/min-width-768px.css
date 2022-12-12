@@ -1,0 +1,110 @@
+@media (min-width: 768px) {
+  .container {
+    margin: 0;
+  }
+  .top-header .top-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .top-header .top-content .left-content {
+    display: flex;
+    flex: 7;
+  }
+  .top-header .top-content .left-content ul li {
+    display: inline-block;
+    padding: 20px;
+  }
+  .top-header .top-content .right-content {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+  .top-nav .navigations {
+    display: flex;
+    padding: 10px;
+  }
+  .top-nav .middle-nav {
+    display: none;
+  }
+  .top-nav .nav-button {
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    font-weight: 800;
+    border-radius: 5px;
+  }
+  .top-nav .nav-btn {
+    padding: 10px;
+  }
+  /* -----------------home-footer ------------------ */
+  .home-footer .home-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+  }
+  /* ===========service section =============== */
+  #service .inner-service {
+    display: flex;
+    flex-direction: column;
+  }
+  #service-info .ser-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* ============ work section ================ */
+  #work_section .heading {
+    padding: 20px;
+  }
+  #work_section .heading .top-heading p {
+    padding: 0px 100px;
+  }
+  #work_section .heading .head-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* =============== client section ================== */
+  .client-back-img {
+    height: 750px;
+    padding: 50px;
+    z-index: -1;
+  }
+  .client-back-img .client-comm-sec {
+    display: flex;
+    flex-direction: column;
+  }
+  .client-comm-sec .client-comm-left .comment .para::after {
+    left: 80px;
+    top: 282px;
+  }
+  .client-comm-sec .client-comm-right .comment .para::after {
+    top: 548px;
+    left: 80px;
+  }
+  /* =================== news blog section ==================== */
+  .latest_news .news-blog-sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* =============== Footer ================= */
+  .footer-sec {
+    padding: 20px;
+  }
+  .footer-sec .footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+  }
+  .footer-sec .footer-content button {
+    top: 0;
+    right: 90px;
+  }
+  .footer-sec .footer-bottom {
+    flex-direction: column;
+  }
+  .footer-sec .footer-bottom .footer-b-sec p {
+    padding-bottom: 20px;
+  }
+}
