@@ -1,0 +1,127 @@
+body {
+  background: linear-gradient(to left, #2f4cdf, #0e217b);
+}
+.main {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 70px;
+}
+button {
+  height: 40px;
+  width: 130px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+.btn1,
+.btn2,
+.btn3,
+.btn4,
+.btn5,
+.btn6 {
+  transition: 0.5s ease all;
+  border: 2px solid black;
+  color: black;
+}
+.btn7,
+.btn8,
+.btn9 {
+  transition: 0.5s ease all;
+  border: 2px solid white;
+  border-radius: 0px;
+  color: white;
+}
+
+.btn1:hover {
+  transform: rotateX(180deg);
+}
+.btn2:hover {
+  transform: rotateY(180deg);
+}
+.btn3:hover {
+  transform: rotate(180deg);
+}
+.btn4:hover {
+  transform: scale(1.1);
+}
+.btn5:hover {
+  transform: scale(0.8);
+}
+.btn6:hover {
+  transform: scale(-1);
+}
+.btn7:hover {
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
+.btn8:hover {
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+}
+.btn9:hover {
+  border: 5px groove magenta;
+  background-color: aliceblue;
+  color: black;
+}
+a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+.underline1::before {
+  content: "";
+}
+.underline1::after {
+  content: "";
+  height: 2px;
+  width: 130px;
+  background-color: red;
+  display: block;
+  transition: 0.5s ease all;
+  transform: scaleX(0);
+}
+.underline1:hover::after {
+  transform: scale(1);
+}
+.underline2::before {
+  content: "";
+}
+.underline2::after {
+  content: "";
+  height: 2px;
+  width: 130px;
+  background-color: red;
+  display: block;
+  transition: 0.5s ease all;
+  transform: scaleY(0);
+}
+.underline2:hover::after {
+  transform: scaleY(1);
+}
+.underline3 {
+  position: relative;
+}
+.underline3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: brown;
+  height: 2px;
+}
+.underline3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: brown;
+  height: 2px;
+  width: 130px;
+  transform-origin: 0% 100%;
+  transition: 1s all ease;
+  transform: scale(0);
+}
+.underline3:hover::after {
+  transform: scale(1, 1);
+}
