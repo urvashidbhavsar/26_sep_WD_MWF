@@ -1,0 +1,29 @@
+javacript is a scripting language.
+also known as object based scripting language.
+
+javascript developed in 1995.
+by netscape web browser consortum.
+
+object means -> physical and logical items / things.
+
+chair => color, size, brand, comfortable or not, price, height, quality
+
+person => name, address, age, date of birth, behaviour etc.
+
+logical -> date and time.
+
+basic ->
+
+(1) keywords
+(2) variable
+(3) operator
+(4) loop
+(5) conditional statement
+
+-> <script> tag written in <head> and <body> section.
+
+script created as 3 ways :
+(1) inline -> apply with events
+(2) internal -> apply with <script> tag in head or body
+(3) External -> create an External file using .js extension. and attach with <script> tag.
+ 
