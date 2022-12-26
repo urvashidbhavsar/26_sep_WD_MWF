@@ -1,0 +1,32 @@
+2 type -> conditional -> (1) if statement (2) switch statement
+
+subtype of if condition ->
+(1) if.. else statement
+(2) if.. elseif.. else statement
+
+syntax, 
+if (condition){
+    statements
+}
+
+if(condition){
+    statement
+}else{
+    statement
+}
+
+if(condition1){
+
+}else if(condition2){
+
+}else{}
+
+-> switch statement 
+
+switch(case_number){
+    case 1:
+    case 2:
+    ....
+    case N:
+    default:
+}
