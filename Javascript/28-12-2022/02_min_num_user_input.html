@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: auto;
+        width: 200px;
+        border: 2px solid blue;
+        margin: 150px auto;
+        padding: 20px;
+      }
+    </style>
+    <script>
+      function min_number() {
+        // document form_name field_name value
+        let num1 = document.form1.n1.value;
+        let num2 = document.form1.n2.value;
+
+        if (num1 < num2) {
+          document.getElementById("res").innerHTML = num1 + " is min";
+          return false;
+        } else if (num2 < num1) {
+          document.getElementById("res").innerHTML = num2 + " is min";
+          return false;
+        } else {
+          document.getElementById("res").innerHTML =
+            num1 + " and " + num2 + " are same";
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2>Find Minimum Number</h2>
+      <form action="" name="form1">
+        <input type="text" name="n1" id="num1" placeholder="Number 1" />
+        <p></p>
+        <input type="text" name="n2" id="num2" placeholder="Number 2" />
+        <p></p>
+        <button id="btn1" onclick="return min_number()">Click Here</button>
+        <p id="res"></p>
+      </form>
+    </div>
+  </body>
+</html>
+<!-- <script>
+    function min_number() {
+      let num1 = document.getElementById("num1").value;
+      let num2 = document.getElementById("num2").value;
+
+      if (num1 < num2) {
+        document.getElementById("res").innerHTML = num1 + " is min";
+        return false;
+      } else if (num2 < num1) {
+        document.getElementById("res").innerHTML = num2 + " is min";
+        return false;
+      } else {
+        document.getElementById("res").innerHTML =
+          num1 + " and " + num2 + " are same";
+        return false;
+      }
+    }
+  </script> -->
