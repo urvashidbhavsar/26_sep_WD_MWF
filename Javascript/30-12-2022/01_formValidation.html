@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        height: auto;
+        width: 300px;
+        border: 1px solid black;
+        margin: 20px auto;
+        padding: 20px;
+      }
+      span {
+        color: red;
+      }
+    </style>
+    <script src="01_formValid.js"></script>
+  </head>
+  <body>
+    <form action="" name="form1" onsubmit="return form_valid()">
+      <label for="">First Name : </label>
+      <input type="text" name="" id="fname" required /> <br />
+      <span id="fmsg"></span>
+      <br /><br />
+
+      <label for="">Gender</label>
+      <input type="radio" name="gen" id="" /> Male
+      <input type="radio" name="gen" id="" /> Female
+      <br />
+      <span id="gmsg"></span>
+      <br /><br />
+
+      <label for="">Subject</label>
+      <input type="checkbox" name="c1" id="" /> HTML
+      <input type="checkbox" name="c2" id="" /> CSS
+      <br />
+      <span id="cmsg"></span>
+      <br /><br />
+
+      <label for="">Experience</label>
+      <select name="exp" id="">
+        <option value="-1">---select---</option>
+        <option value="">&lt;1</option>
+        <option value="">&gt;1</option>
+      </select>
+      <br />
+      <span id="expmsg"></span>
+      <br /><br />
+      <button type="submit">Register</button>
+      <!-- onclick="return form_valid()" -->
+    </form>
+  </body>
+</html>
