@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+form {
+  border: 2px solid black;
+  width: 500px;
+  margin: 20px auto;
+}
+.row {
+  display: flex;
+  padding: 10px;
+}
+.col {
+  padding: 3px;
+  flex: 1;
+  text-align: right;
+}
+.col-1 {
+  padding: 3px;
+  flex: 2;
+}
+span {
+  color: red;
+}
