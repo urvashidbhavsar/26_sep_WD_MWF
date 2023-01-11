@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="formValidation.js"></script>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <form action="" name="form1" method="post">
+      <!-- name -->
+      <div class="row">
+        <div class="col">Name</div>
+        <div class="col-1">
+          <input type="text" name="fname" id="fname" />
+          <span id="fmsg"></span>
+        </div>
+      </div>
+      <!-- gender -->
+      <div class="row">
+        <div class="col">Gender</div>
+        <div class="col-1">
+          <input type="radio" name="gen" id="male" />
+          <label for="">Male</label>
+          <input type="radio" name="gen" id="female" />
+          <label for="">Female</label>
+          <span id="gmsg"></span>
+        </div>
+      </div>
+      <!-- Qualification -->
+      <div class="row">
+        <div class="col">Qualification</div>
+        <div class="col-1">
+          <input type="checkbox" name="c1" id="chk1" />
+          <label for="">10th</label>
+          <input type="checkbox" name="c2" id="chk2" />
+          <label for="">12th</label>
+          <input type="checkbox" name="c3" id="chk3" />
+          <label for="">bachlor</label>
+          <span id="cmsg"></span>
+        </div>
+      </div>
+      <!-- city -->
+      <div class="row">
+        <div class="col">City</div>
+        <div class="col-1">
+          <select name="city" id="city">
+            <option value="-1">---select---</option>
+            <option value="">Baroda</option>
+            <option value="">Surat</option>
+          </select>
+          <span id="citymsg"></span>
+        </div>
+      </div>
+      <!-- email id -->
+      <div class="row">
+        <div class="col">Email</div>
+        <div class="col-1">
+          <input type="text" name="mail" id="mail" />
+          <span id="mailmsg"></span>
+        </div>
+      </div>
+
+      <!-- mobile no -->
+      <div class="row">
+        <div class="col">Mobile no</div>
+        <div class="col-1">
+          <input type="text" name="mno" id="mno" maxlength="10" />
+          <span id="mmsg"></span>
+        </div>
+      </div>
+      <!-- create password -->
+      <div class="row">
+        <div class="col">Enter Password</div>
+        <div class="col-1">
+          <input type="password" name="p" id="sec" />
+          <span id="pmsg"></span>
+        </div>
+      </div>
+      <!-- confirm password -->
+      <div class="row">
+        <div class="col">Confirm Password</div>
+        <div class="col-1">
+          <input type="password" name="p1" id="sec1" />
+          <span id="pmsg1"></span>
+        </div>
+      </div>
+      <!-- show password -->
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-1">
+          <input type="checkbox" onclick="return hide_show()" />
+          <label for="">Show Password</label>
+        </div>
+      </div>
+
+      <!-- button -->
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-1">
+          <input
+            type="submit"
+            name="submit"
+            value="Register"
+            onclick="return form_valid()"
+          />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

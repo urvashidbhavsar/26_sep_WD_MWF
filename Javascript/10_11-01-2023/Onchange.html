@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        color: red;
+      }
+    </style>
+    <script>
+      function form_valid() {
+        let f_name = document.getElementById("fname").value;
+        if (f_name == "") {
+          document.getElementById("msg1").innerHTML = "Enter name";
+          return false;
+        } else if (f_name.match(/^[A-Za-z]*$/)) {
+          return true;
+        } else {
+          document.getElementById("msg1").innerHTML = "Alphabet not allowed";
+          return false;
+        }
+      }
+      function check_name() {
+        let f_name = document.getElementById("fname").value;
+        if (f_name.match(/^[A-Za-z]*$/)) {
+          return true;
+        } else {
+          document.getElementById("msg1").innerHTML = "Alphabet not allowed";
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="" method="get" name="form1">
+      <label for="">Enter Name</label>
+      <input type="text" id="fname" onchange="return check_name()" />
+      <span id="msg1"></span>
+      <br /><br />
+      <input type="submit" name="" id="" onclick="return form_valid()" />
+    </form>
+  </body>
+</html>
