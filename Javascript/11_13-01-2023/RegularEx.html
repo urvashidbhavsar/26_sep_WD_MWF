@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        color: red;
+      }
+    </style>
+    <script>
+      function reg_ex() {
+        // => /^[A-Za-z]$/
+        // => /^[0-9]$/
+        let fname = document.getElementById("fname").value;
+        if (fname == "") {
+          document.getElementById("msg1").innerHTML = "Enter name";
+          return false;
+        } else if (fname.match(/^([a-zA-Z]){2,30}$/)) {
+          return true;
+        } else {
+          document.getElementById("msg1").innerHTML = "false";
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="#" name="form1" method="get">
+      <input type="text" name="" id="fname" placeholder="Enter Full name" />
+      <span id="msg1"></span>
+
+      <br /><br />
+      <input type="submit" name="" id="" onclick="return reg_ex()" />
+    </form>
+  </body>
+</html>
