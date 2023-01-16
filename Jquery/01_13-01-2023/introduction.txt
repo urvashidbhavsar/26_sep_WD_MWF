@@ -1,0 +1,29 @@
+Jquery is a library of javascript.
+
+version -> 3.6.3
+
+original website -> jquery.com
+
+cdn->
+(1) online -> cdnjs.com / prefer original website
+(2) offline (copy paste that code)
+
+functions ->
+(1) display functions
+(2) fade functions
+(3) slide functions
+(4) css functions
+(5) animate functions
+(6) css class functions
+(7) remove functions
+(8) traversing -> ancestor, decendent, siblings, filter
+(9) dimensions
+(10) ajax
+(11) add functions
+
+syntax :
+$(document).ready(function(){
+    $("").click(function(){
+        $("").functions();
+    })
+})

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("h1").mouseover(function () {
+          $("h1").css({
+            color: "red",
+            "background-color": "blue",
+            "font-size": "50px",
+          });
+        });
+
+        $("h1").mouseout(function () {
+          $("h1").css({
+            color: "black",
+            "background-color": "transparent",
+            "font-size": "2em",
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Hello world</h1>
+  </body>
+</html>

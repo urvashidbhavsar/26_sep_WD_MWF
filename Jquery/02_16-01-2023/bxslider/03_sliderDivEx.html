@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- original website : https://bxslider.com/ -->
+
+    <!-- bxslider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <!-- bxslider css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css"
+    />
+
+    <style>
+      img {
+        height: 600px;
+        width: 100%;
+      }
+      .img-main {
+        display: flex;
+      }
+      .img-main .content {
+        flex: 1;
+        background-color: lightgray;
+      }
+      .img-main .image {
+        flex: 1;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $(".bxslider").bxSlider({
+          //   mode: "fade",
+          loop: true,
+          //   infiniteLoop: true,
+          //   hideControlOnEnd: true,
+          controls: false,
+          pager: false,
+          auto: true,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="bxslider">
+      <div class="img1">
+        <div class="img-main">
+          <div class="content">
+            <h1>Hello world</h1>
+          </div>
+          <div class="image">
+            <img src="images/img1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="img1">
+        <div class="img-main">
+          <div class="content">
+            <h1>Good Morning</h1>
+          </div>
+          <div class="image">
+            <img src="images/img2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="img1">
+        <div class="img-main">
+          <div class="content">
+            <h1>Hello world</h1>
+          </div>
+          <div class="image">
+            <img src="images/img3.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="img1">
+        <div class="img-main">
+          <div class="content">
+            <h1>Good Morning</h1>
+          </div>
+          <div class="image">
+            <img src="images/img4.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
