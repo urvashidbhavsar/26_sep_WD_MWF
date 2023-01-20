@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#text").click(function () {
+          alert($("p").text());
+        });
+
+        $("#html_func").click(function () {
+          alert($("p").html());
+        });
+
+        $("#val").click(function () {
+          alert($("#user").val());
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- get attribute functions are -> text(), html(), val();-->
+
+    <button id="text">Text()</button>
+    <button id="html_func">HTML()</button>
+    <button id="val">Val()</button>
+    <hr />
+
+    <p>
+      <i><b>Hello World</b></i>
+    </p>
+
+    <input type="text" id="user" value="Hello User!!!" />
+  </body>
+</html>

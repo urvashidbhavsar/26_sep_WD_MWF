@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1 {
+        height: 200px;
+        width: 300px;
+        border: 2px solid black;
+        padding: 20px;
+        margin: 10px;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var $txt = "";
+        $txt =
+          "Height = " +
+          $("#div1").height() +
+          "<br>" +
+          "Width = " +
+          $("#div1").width() +
+          "<br>" +
+          "InnerWidth = " +
+          $("#div1").innerWidth() +
+          "<br>" +
+          "InnerHeight = " +
+          $("#div1").innerHeight() +
+          "<br>" +
+          "OuterWidth = " +
+          $("#div1").outerWidth() +
+          "<br>" +
+          "OuterHeight = " +
+          $("#div1").outerHeight() +
+          "<br>" +
+          "OuterWidth(true) = " +
+          $("#div1").outerWidth(true) +
+          "<br>" +
+          "OuterHeight(true) = " +
+          $("#div1").outerHeight(true);
+
+        $("#div1").html($txt);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <!-- 
+        height and width -> only content height and width
+        innerheight and innerwidth -> count content and padding
+        outerHeight and outerWidth -> count content, padding, border
+         outerHeight and outerWidth(true) -> count content, padding, border,margin
+     -->
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <style>
+      .head {
+        color: lightgreen;
+        background-color: darkgray;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .head2 {
+        font-size: 50px;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("h1").addClass("head");
+        });
+        $("#rem").click(function () {
+          $("h1").removeClass("head");
+        });
+        $("#togg").click(function () {
+          $("h2").toggleClass("head2");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- css class function
+        addClass()
+        removeClass()
+        toggleClass()
+    -->
+
+    <button id="btn1">AddClass()</button>
+    <button id="rem">RemoveClass()</button>
+    <button id="togg">ToggleClass()</button>
+    <hr />
+
+    <h1>Hello world</h1>
+
+    <h2>Hello world</h2>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#text").click(function () {
+          $("p").text("Hello user, Good Morning!!!");
+        });
+
+        $("#html_func").click(function () {
+          $("p").html("<b>Hello user, Good Morning!!!<b>");
+        });
+
+        $("#val").click(function () {
+          $("#user").val("Hello User!!!");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- set attribute functions are -> text(), html(), val();-->
+
+    <button id="text">Text()</button>
+    <button id="html_func">HTML()</button>
+    <button id="val">Val()</button>
+    <hr />
+
+    <p>Hello world</p>
+
+    <input type="text" id="user" value="Hello" readonly />
+  </body>
+</html>
