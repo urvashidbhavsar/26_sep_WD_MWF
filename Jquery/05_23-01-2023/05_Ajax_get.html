@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          //   $("#load_data").load("data.txt");
+          $.get("data.txt", function (data, status) {
+            // alert("Data = " + data + "\nstatus = " + status);
+            $("h3").html("Data = " + data + "<br> status = " + status);
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- ajax -> Asynchronous javascript and XML
+        XML -> extentible markup language
+
+        it can load data without reload whole pages.
+
+        ajax always load on live server
+    -->
+    <button id="btn1">Click Here to Load Ajax</button>
+    <h3 id="load_data"></h3>
+  </body>
+</html>
