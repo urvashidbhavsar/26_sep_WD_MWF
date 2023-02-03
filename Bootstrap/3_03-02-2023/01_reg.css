@@ -1,0 +1,11 @@
+@media (max-width: 576px) {
+  .form-data {
+    display: flex;
+  }
+  .col-label {
+    flex: 1;
+  }
+  .col-data {
+    flex: 3;
+  }
+}
