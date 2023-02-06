@@ -1,0 +1,83 @@
+* {
+  font-family: Prompt, sans-serif;
+}
+a {
+  text-decoration: none !important;
+}
+.top-header a {
+  color: black !important;
+}
+.navigation {
+  background-color: #00d02a !important;
+  position: sticky;
+  top: 0;
+}
+.navigation a {
+  color: white !important;
+}
+.navigation .nav-w {
+  width: 80%;
+}
+.navigation .nav-w a {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.navigation .nav-w .drop-menu a {
+  color: black !important;
+}
+.navigation .search .search-op {
+  background-color: white;
+  color: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation .search .search-op-1 {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation .logo-line {
+  position: relative;
+}
+.navigation .logo-line::before {
+  content: "";
+}
+.navigation .logo-line::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  height: 6px;
+  width: 27px;
+  background-color: white;
+  display: block;
+  left: 5px;
+  border-radius: 15px 0px;
+}
+.navigation .logo-text::first-letter {
+  font-size: 45px;
+}
+
+@media (max-width: 576px) {
+  .top-header {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  .top-header {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+  .top-header {
+    display: block;
+  }
+}
